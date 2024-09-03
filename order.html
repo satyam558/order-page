@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Order Summary Component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+
+          body{
+            background-image: url("images/pattern-background-desktop.svg");
+            background-repeat:repeat-x;
+            background-color:rgb(210, 210, 232);
+           margin: 0;
+           padding: 0;
+          }
+          .container{
+            max-height: 600px;
+            max-width: 350px;
+            margin: 100px auto;
+            background-color:white;
+            padding-bottom: 50px;
+            border-radius: 15px;
+          }
+
+          .image-1{
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+          }
+          .center{
+            margin: 0 8%;
+          }
+          .song{
+            text-align: center;
+            text-transform: capitalize;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+          .music{
+            max-width: 300px;
+            max-height: 45px;
+            background-color:rgb(223, 223, 238);
+            display: flex;
+            margin: 30px 0;
+            padding: 18px;
+            align-items: center;
+            border-radius: 5px;
+          }
+          .music a{
+            margin-left: 45px;
+          }
+          aside{
+          
+            margin-left: 10px;
+            line-height: 1.5px;
+          }
+          .payment{
+            display: grid;
+            text-align: center;
+            
+          }
+          p{
+            color: grey;
+            font-family:serif;
+            
+          }
+          #order{
+            min-width:100px;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-weight:bolder;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.5);
+          }
+
+          #cancel-order{
+            min-width:100px;
+            color: grey;
+            padding: 10px;
+            text-decoration: none;
+            font-weight:bolder;
+            text-transform: capitalize;
+
+            
+          }
+
+          #cancel-order:hover{
+            box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            background-color: blue;
+            border-radius: 10px;
+          }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+           <img src="images/illustration-hero.svg" alt="background-image" class="image-1">
+           <div class="center">
+               <section class="song">
+                 <h1>order summary</h1>
+                 <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+               </section>
+               <div class="music">
+                 <img src="images/icon-music.svg" alt="image-icon" class="image-2">
+                     <aside>
+                       <h4>Annual plain</h4>
+                       <p>$59.99/year</p>
+                     </aside>
+                     <a href="#change">change</a>
+               </div>
+
+               <div class="payment">
+                  <a href="#payment" id="order">Proceed to payment</a>
+                  <a href="#cancel" id="cancel-order">Cancel Order</a>
+               </div>
+            </div>
+       </div>
+    </body>
+   
+</html>
